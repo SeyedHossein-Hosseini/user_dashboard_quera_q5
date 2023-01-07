@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="sidebar">
+      <aside>
+        <header class="sidebar_header">
+          <img src="./assets/DB.svg" alt="" />
+          <h2>داده پردازان کوثر</h2>
+        </header>
+        <main class="sidebar_items">
+          <ul class="sidebar_items_ul">
+            <li>
+              <img src="./assets/home.svg" alt="" />
+              <span>میزکار</span>
+            </li>
+            <li>
+              <img src="./assets/customer.svg" alt="" />
+              <span>مشتریان</span>
+            </li>
+            <li>
+              <img src="./assets/message.svg" alt="" />
+              <span>اعلانات</span>
+            </li>
+            <li>
+              <img src="./assets/guide.svg" alt="" />
+              <span>راهنما</span>
+            </li>
+            <li>
+              <img src="./assets/settings.svg" alt="" />
+              <span>تنظیمات</span>
+            </li>
+            <li>
+              <img src="./assets/security.svg" alt="" />
+              <span>امنیت</span>
+            </li>
+            <li>
+              <img src="./assets/logout.svg" alt="" />
+              <span>خروج از حساب</span>
+            </li>
+          </ul>
+        </main>
+      </aside>
+    </section>
+    <section class="main_info">
+      <header>
+        <nav class="navbar">
+          <img class="navbar_toggle" src="./assets/menu.svg" alt="" />
+          <div class="navbar_input_container">
+            <input type="text" class="navbar_input" placeholder="جستجو کنید" />
+            <img src="./assets/search.svg" class="navbar_input_search" />
+          </div>
+          <img src="./assets/1.jpg" class="navbar_image" alt="" />
+        </nav>
+        <section class="card_container">
+          <div class="card_container_item">
+            <div class="card_container_item_title">
+              <p>5,037</p>
+              <p>بازدید روزانه</p>
+            </div>
+            <img
+              src="./assets/eye.svg"
+              width="30px"
+              class="card_container_item_img"
+            />
+          </div>
+          <div class="card_container_item">
+            <div class="card_container_item_title">
+              <p>534</p>
+              <p>تعداد فروش</p>
+            </div>
+            <img
+              src="./assets/basket.svg"
+              width="30px"
+              class="card_container_item_img"
+            />
+          </div>
+          <div class="card_container_item">
+            <div class="card_container_item_title">
+              <p>537 میلیون تومان</p>
+              <p>سود خالص</p>
+            </div>
+            <img
+              src="./assets/dollar.svg"
+              width="30px"
+              class="card_container_item_img"
+            />
+          </div>
+          <div class="card_container_item">
+            <div class="card_container_item_title">
+              <p>36</p>
+              <p>درصد بازاریاب</p>
+            </div>
+            <img
+              src="./assets/percent.svg"
+              width="30px"
+              class="card_container_item_img"
+            />
+          </div>
+        </section>
+      </header>
+      <main>
+        <section class="analytics">
+          <div class="analytics_recent_customers">
+            <section class="chart_digram">
+              <header>
+                <div class="chart-header">
+                  <h2>نمودار تحلیلی</h2>
+                  <a href="#" class="moreBtn">بیشتر</a>
+                </div>
+                <div class="chart-js">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </header>
+              <main></main>
+            </section>
+          </div>
+          <div class="analytics_digrams">
+            <h3>مشتریان اخیر</h3>
+            <table class="customers_comments">
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="./assets/1.jpg" width="40px" alt="" />
+                  </td>
+                  <td>
+                    <h4>علیرضا رمضانی</h4>
+                    <span>شیراز</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/1.jpg" width="40px" alt="" />
+                  </td>
+                  <td>
+                    <h4>علیرضا رمضانی</h4>
+                    <span>شیراز</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/1.jpg" width="40px" alt="" />
+                  </td>
+                  <td>
+                    <h4>علیرضا رمضانی</h4>
+                    <span>شیراز</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/1.jpg" width="40px" alt="" />
+                  </td>
+                  <td>
+                    <h4>علیرضا رمضانی</h4>
+                    <span>شیراز</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/1.jpg" width="40px" alt="" />
+                  </td>
+                  <td>
+                    <h4>علیرضا رمضانی</h4>
+                    <span>شیراز</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
